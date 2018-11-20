@@ -181,7 +181,7 @@ Page({
             }
           }
         } else {//入住跨月月份
-          if (dateList[j].month < monthOut) {//离店中间的月份
+          if (dateList[j].month < monthOut && dateList[j].month > monthIn) {//离店中间的月份
             let days = dateList[j].days;
             for (let k = 0; k < days.length; k++) {
               days[k].class = days[k].class + ' bgitem';
