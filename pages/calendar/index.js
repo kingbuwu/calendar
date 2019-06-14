@@ -334,6 +334,7 @@ Page({
     this.renderPressStyle(year, month, day);
   },
   renderPressStyle: function (year, month, day) {
+    this.createDateListData();//重新点击时数据初始化
     var dateList = this.data.dateList;
     //渲染点击样式
     for (var i = 0; i < dateList.length; i++) {
